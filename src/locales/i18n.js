@@ -6,7 +6,7 @@ import languages from './lang';
 i18n.use(initReactI18next).init({
     compatibilityJSON: 'v3',
     resources: languages,
-    lng: 'en',
+    lng: 'es',
     fallbackLng: 'en',
     ns: ['common'],
     defaultNS: 'common',
