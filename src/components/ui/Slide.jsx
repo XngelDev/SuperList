@@ -1,9 +1,13 @@
 import { ImageBackground, StyleSheet, View, useWindowDimensions } from 'react-native'
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import { useTheme, Text } from 'react-native-paper'
 
 const Slide = ({ item }) => {
+
     const theme = useTheme()
+    const { t } = useTranslation()
+
     const { title, text, background } = item
 
     const { width, height } = useWindowDimensions("window")
@@ -22,8 +26,8 @@ const Slide = ({ item }) => {
 
             </View>
             <View style={styles.textContainer} >
-                <Text variant='titleLarge' style={{ textAlign: "center", marginVertical:4 }} >{title}</Text>
-                <Text variant='labelLarge' style={{ textAlign: "center", marginVertical:4 }} >{text}</Text>
+                <Text variant='titleLarge' style={{ textAlign: "center", marginVertical: 4 }} >{title}</Text>
+                <Text variant='labelLarge' style={{ textAlign: "center", marginVertical: 4 }} >{text}</Text>
             </View>
         </ImageBackground>
     )
