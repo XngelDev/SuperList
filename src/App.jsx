@@ -1,12 +1,15 @@
 import React from 'react';
 import {
   SafeAreaView,
-  StatusBar,
+  StatusBar
 } from 'react-native';
 
 import { useSelector, useDispatch } from 'react-redux';
 
 import { useTheme } from 'react-native-paper';
+
+import NavigationProvider from './routes/NavigationProvider';
+import MainStack from './routes/MainStack';
 
 import {
   init
@@ -33,7 +36,9 @@ function App() {
         barStyle={'light-content'}
         backgroundColor={theme.colors.primary}
       />
-
+      <NavigationProvider>
+        <MainStack />
+      </NavigationProvider>
     </SafeAreaView>
   );
 }
