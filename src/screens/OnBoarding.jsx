@@ -1,5 +1,6 @@
 import { View, FlatList, StatusBar, useWindowDimensions } from 'react-native'
 import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useTheme, Text, Button } from 'react-native-paper'
 import Slide from '../components/ui/Slide'
 
@@ -10,45 +11,41 @@ import ob3 from '../assets/onboarding/Hotpot_3.png'
 import ob4 from '../assets/onboarding/Hotpot_4.png'
 import { useNavigation } from '@react-navigation/native'
 
-const Slides = [
-  {
-    key: 0,
-    title: "¡Organiza tus compras!",
-    text: "Crea listas personalizadas y simplifica tu experiencia de compra.",
-    background: ob0
-  },
-  {
-    key: 1,
-    title: "Nunca olvides un artículo",
-    text: "Registra tus productos favoritos y mantén un seguimiento de lo que necesitas.",
-    background: ob1
-  },
-  {
-    key: 2,
-    title: "Compra inteligente, ahorra tiempo",
-    text: "Optimiza tu rutina de compras con nuestra app fácil de usar y mejora tu productividad.",
-    background: ob2
-  },
-  {
-    key: 3,
-    title: "Haz que comprar sea divertido",
-    text: "Descubre una forma emocionante de hacer tus compras diarias con características interactivas.",
-    background: ob3
-  },
-  {
-    key: 4,
-    title: "Tu asistente de compras personal",
-    text: "Obtén recomendaciones personalizadas y mantén el control de tu presupuesto en todo momento.",
-    background: ob4
-  },
-]
-
 const OnBoarding = () => {
 
   const theme = useTheme()
+  const { t } = useTranslation()
   const nav = useNavigation()
 
   const { width, height } = useWindowDimensions("window")
+
+  const Slides = [
+    {
+      title: t('onboarding.0.title'),
+      text: t('onboarding.0.text'),
+      background: ob0
+    },
+    {
+      title: t('onboarding.1.title'),
+      text: t('onboarding.1.text'),
+      background: ob0
+    },
+    {
+      title: t('onboarding.2.title'),
+      text: t('onboarding.2.text'),
+      background: ob0
+    },
+    {
+      title: t('onboarding.3.title'),
+      text: t('onboarding.3.text'),
+      background: ob0
+    },
+    {
+      title: t('onboarding.4.title'),
+      text: t('onboarding.4.text'),
+      background: ob0
+    }
+  ]
 
   const [slideIndex, setIndex] = useState(0)
 
@@ -116,8 +113,8 @@ const OnBoarding = () => {
         justifyContent: "space-around",
         alignItems: "center"
       }} >
-        <Button onPress={Skip} >Skip</Button>
-        <Button mode='contained' onPress={goToNextSlide} >Next</Button>
+        <Button onPress={Skip} >{t("action.skip")}</Button>
+        <Button mode='contained' onPress={goToNextSlide} >{t("action.next")}</Button>
       </View>
     </View>
   )
