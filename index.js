@@ -3,12 +3,15 @@ import { AppRegistry } from 'react-native';
 import { name as appName } from './app.json';
 import App from './src/App';
 import AppThemeProvider from './src/theme/AppThemeProvider';
+import AppPersistProvider from './src/redux/AppPersistProvider';
 
 export default function Main() {
   return (
-    <AppThemeProvider>
-      <App />
-    </AppThemeProvider>
+    <AppPersistProvider>
+      <AppThemeProvider>
+        <App />
+      </AppThemeProvider>
+    </AppPersistProvider>
   );
 }
 
