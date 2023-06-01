@@ -1,0 +1,27 @@
+{
+    "common": {
+        "hello": "Hello, world!",
+        "onboarding": [
+            {
+                "title": "Organize Your Shopping!",
+                "text": "Create personalized lists and simplify your shopping experience."
+            },
+            {
+                "title": "Never Forget an Item",
+                "text": "Register your favorite products and keep track of what you need."
+            },
+            {
+                "title": "Smart Shopping, Time Savings",
+                "text": "Optimize your shopping routine with our user-friendly app and enhance your productivity."
+            },
+            {
+                "title": "Make Shopping Fun",
+                "text": "Discover an exciting way to do your daily shopping with interactive features."
+            },
+            {
+                "title": "Your Personal Shopping Assistant",
+                "text": "Get personalized recommendations and stay in control of your budget at all times."
+            }
+        ]
+    }
+}

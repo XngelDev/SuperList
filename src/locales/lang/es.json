@@ -1,0 +1,41 @@
+{
+    "common": {
+        "hello": "Hola, mundo!",
+        "onboarding": [
+            {
+                "title": "¡Organiza tus compras!",
+                "text": "Crea listas personalizadas y simplifica tu experiencia de compra."
+            },
+            {
+                "title": "¡Nunca olvides un artículo!",
+                "text": "Registra tus productos favoritos y realiza un seguimiento de lo que necesitas."
+            },
+            {
+                "title": "¡Compra inteligente, ahorra tiempo!",
+                "text": "Optimiza tu rutina de compras con nuestra aplicación fácil de usar y mejora tu productividad."
+            },
+            {
+                "title": "¡Haz que comprar sea divertido!",
+                "text": "Descubre una forma emocionante de hacer tus compras diarias con características interactivas."
+            },
+            {
+                "title": "¡Tu asistente personal de compras!",
+                "text": "Recibe recomendaciones personalizadas y mantén el control de tu presupuesto en todo momento."
+            }
+        ],
+        "action": {
+            "accept": "Aceptar",
+            "cancel": "Cancelar",
+            "close": "Cerrar",
+            "confirm": "Confirmar",
+            "continue": "Continuar",
+            "dismiss": "Descartar",
+            "done": "Listo",
+            "next": "Siguiente",
+            "previous": "Anterior",
+            "save": "Guardar",
+            "skip": "Saltar",
+            "submit": "Enviar"
+        }
+    }
+}
