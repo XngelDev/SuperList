@@ -1,4 +1,4 @@
-import { ImageBackground, StyleSheet, View, useWindowDimensions } from 'react-native'
+import { Image, ImageBackground, StyleSheet, View, useWindowDimensions } from 'react-native'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { useTheme, Text } from 'react-native-paper'
@@ -8,7 +8,7 @@ const Slide = ({ item }) => {
     const theme = useTheme()
     const { t } = useTranslation()
 
-    const { title, text, background } = item
+    const { title, text, background, icon } = item
 
     const { width, height } = useWindowDimensions("window")
 
@@ -17,14 +17,14 @@ const Slide = ({ item }) => {
             imageStyle={{ resizeMode: "contain" }}
             source={background}
             style={StyleSheet.flatten([styles.root, { width: width }])} >
-            <View style={StyleSheet.flatten([
-                styles.image,
-                {
-                    backgroundColor: theme.colors.primary,
-                }
-            ])} >
+            <Image source={icon}
+                style={StyleSheet.flatten([
+                    styles.image,
+                ])}
+                resizeMode='contain'
+            >
 
-            </View>
+            </Image>
             <View style={styles.textContainer} >
                 <Text variant='titleLarge' style={{ textAlign: "center", marginVertical: 4 }} >{title}</Text>
                 <Text variant='labelLarge' style={{ textAlign: "center", marginVertical: 4 }} >{text}</Text>
@@ -46,13 +46,13 @@ export default Slide
 const styles = StyleSheet.create({
     root: {
         flex: 1,
-        justifyContent: 'space-around',
+        justifyContent: 'center',
         alignItems: 'center',
         flexDirection: 'column',
     },
     image: {
-        height: 240,
-        width: 240,
+        height: 320,
+        width: 320,
         marginVertical: "10%",
     },
     textContainer: {

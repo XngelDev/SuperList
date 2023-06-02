@@ -23,27 +23,32 @@ const OnBoarding = () => {
     {
       title: t('onboarding.0.title'),
       text: t('onboarding.0.text'),
-      background: ob0
+      background: ob0,
+      icon:require('../assets/icons/ic_ob_1.png')
     },
     {
       title: t('onboarding.1.title'),
       text: t('onboarding.1.text'),
-      background: ob0
+      background: ob0,
+      icon:require('../assets/icons/ic_ob_2.png')
     },
     {
       title: t('onboarding.2.title'),
       text: t('onboarding.2.text'),
-      background: ob0
+      background: ob0,
+      icon:require('../assets/icons/ic_ob_3.png')
     },
     {
       title: t('onboarding.3.title'),
       text: t('onboarding.3.text'),
-      background: ob0
+      background: ob0,
+      icon:require('../assets/icons/ic_ob_4.png')
     },
     {
       title: t('onboarding.4.title'),
       text: t('onboarding.4.text'),
-      background: ob0
+      background: ob0,
+      icon:require('../assets/icons/ic_ob_5.png')
     }
   ]
 
