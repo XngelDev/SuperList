@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import OnBoarding from '../screens/OnBoarding';
 import Home from '../screens/Home';
+import AppStack from './AppStack';
 
 const Stack = createNativeStackNavigator();
 
@@ -14,7 +15,7 @@ const MainStack = () => {
             headerShown: false
         }} >
             <Stack.Screen name="OnBoarding" component={OnBoarding} />
-            <Stack.Screen name="Home" component={Home} />
+            <Stack.Screen name="Home" component={AppStack} />
         </Stack.Navigator>
     )
 }

@@ -1,6 +1,6 @@
-import { useColorScheme } from 'react-native'
-import React from 'react'
 
+import React from 'react'
+import { useColorScheme } from 'react-native'
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 
 import { adaptNavigationTheme } from 'react-native-paper';
