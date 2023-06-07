@@ -28,18 +28,24 @@
      inkscape:document-units="mm"
      showgrid="false"
      showguides="true"
-     inkscape:zoom="0.4204826"
-     inkscape:cx="430.45776"
-     inkscape:cy="625.47177"
+     inkscape:zoom="0.2973261"
+     inkscape:cx="307.74291"
+     inkscape:cy="322.87781"
      inkscape:window-width="1920"
      inkscape:window-height="961"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g14820"
+     inkscape:current-layer="g853"
      showborder="false"
      borderlayer="false"
-     shape-rendering="crispEdges" />
+     shape-rendering="crispEdges">
+    <sodipodi:guide
+       position="525.83323,-40.086989"
+       orientation="0,-1"
+       id="guide6591"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
   <defs
      id="defs2" />
   <g
@@ -66,31 +72,59 @@
              sodipodi:nodetypes="aaaaaaaaa" />
           <g
              id="g853"
-             transform="matrix(1.0584679,0,0,1.0584679,-4.711047,7.4705622)">
+             transform="matrix(1.0584679,0,0,1.0584679,-219.09396,20.867582)">
             <path
                id="path3044"
                style="fill:#285000;fill-opacity:1;stroke:none;stroke-width:15.811;stroke-linecap:round;stroke-linejoin:round"
-               d="m 168.84181,-255.81217 v 58.58387 c 0,32.76547 -29.20423,59.14344 -65.48033,59.14344 -36.276078,0 -65.48029,-26.37797 -65.48029,-59.14344 v -13.74509 -67.0592 z"
+               d="m 79.335158,-531.71463 v 58.58387 c 0,32.76547 -29.20423,59.14344 -65.48033,59.14344 -36.27608,0 -65.48029,-26.37797 -65.48029,-59.14344 v -13.74509 -67.0592 z"
                sodipodi:nodetypes="csssccc" />
             <circle
                style="fill:#285000;fill-opacity:1;stroke:none;stroke-width:14.3261;stroke-linecap:round;stroke-linejoin:round"
                id="circle3046"
-               cx="139.10748"
-               cy="35.493797"
+               cx="388.85785"
+               cy="351.40353"
                r="18.459251"
                transform="rotate(-89.01967)" />
             <circle
                style="fill:#285000;fill-opacity:1;stroke:none;stroke-width:10.579;stroke-linecap:round;stroke-linejoin:round"
                id="circle3048"
-               cx="138.49339"
-               cy="157.26318"
+               cx="388.24374"
+               cy="473.17291"
                r="13.631085"
                transform="rotate(-89.01967)" />
             <path
                style="color:#000000;fill:#285000;fill-opacity:1;stroke-width:1.71912;stroke-linecap:round;-inkscape-stroke:none"
-               d="m 12.466255,-310.61085 c 0.510203,2.30969 1.917342,4.322 3.911685,5.59387 l 22.89596,14.59914 v 7.80421 l 17.82923,3.03829 v -20.62002 l -31.139029,-19.85726 c -4.151159,-2.64654 -9.661735,-1.42749 -12.309224,2.72306 -1.271415,1.99337 -1.698963,4.41013 -1.188622,6.71871 z"
+               d="m 332.60275,-554.9197 c 0.51021,2.30969 1.91735,4.322 3.91169,5.59387 l 22.89596,14.59914 v 7.80421 l 17.82923,3.03829 v -20.62002 l -31.13903,-19.85726 c -4.15116,-2.64654 -9.66173,-1.42749 -12.30922,2.72306 -1.27142,1.99337 -1.69897,4.41013 -1.18863,6.71871 z"
                id="path3050"
                sodipodi:nodetypes="ccccccccc" />
+            <g
+               id="g7325"
+               transform="translate(-292.63095,-49.619124)">
+              <circle
+                 style="fill:#285000;fill-opacity:1;stroke:none;stroke-width:14.3261;stroke-linecap:round;stroke-linejoin:round"
+                 id="circle3046-3"
+                 cx="123.988"
+                 cy="530.96375"
+                 r="18.459251"
+                 transform="rotate(-89.01967)" />
+              <circle
+                 style="fill:#285000;fill-opacity:1;stroke:none;stroke-width:10.579;stroke-linecap:round;stroke-linejoin:round"
+                 id="circle3048-6"
+                 cx="121.20554"
+                 cy="649.08307"
+                 r="13.631085"
+                 transform="rotate(-89.01967)" />
+              <path
+                 id="rect3305"
+                 style="fill:none;stroke:#285000;stroke-width:15.6019;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 535.36587,-234.27984 144.13087,-10.53075 -37.04295,101.45498 h -90.92423 z"
+                 sodipodi:nodetypes="ccccc" />
+              <path
+                 style="fill:none;stroke:#285000;stroke-width:15.6019;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 535.43969,-233.83577 -10.66262,-29.48495 H 496.3439"
+                 id="path6583"
+                 sodipodi:nodetypes="ccc" />
+            </g>
           </g>
         </g>
       </g>

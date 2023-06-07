@@ -15,6 +15,7 @@ import { combineReducers } from 'redux';
 import { configureStore } from '@reduxjs/toolkit';
 
 import appReducer from './app/reducers';
+import superListReducers from './super_list/reducer';
 
 const persistConfig = {
     key: 'root',
@@ -23,6 +24,7 @@ const persistConfig = {
 
 const reducers = combineReducers({
     app: appReducer,
+    superList: superListReducers
 });
 
 const persistedReducer = persistReducer(persistConfig, reducers);

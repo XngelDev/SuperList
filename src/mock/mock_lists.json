@@ -1,0 +1,82 @@
+[
+    {
+        "id": "1",
+        "title": "Lista de compras 1",
+        "created": "2023-05-10",
+        "items_count": 5,
+        "items_check": 2,
+        "total": 50
+    },
+    {
+        "id": "2",
+        "title": "Lista de compras 2",
+        "created": "2023-05-09",
+        "items_count": 10,
+        "items_check": 7,
+        "total": 15
+    },
+    {
+        "id": "3",
+        "title": "Lista de compras 3",
+        "created": "2023-05-08",
+        "items_count": 8,
+        "items_check": 3,
+        "total": 80
+    },
+    {
+        "id": "4",
+        "title": "Lista de compras 4",
+        "created": "2023-05-07",
+        "items_count": 3,
+        "items_check": 1,
+        "total": 10
+    },
+    {
+        "id": "5",
+        "title": "Lista de compras 5",
+        "created": "2023-05-06",
+        "items_count": 6,
+        "items_check": 4,
+        "total": 25
+    },
+    {
+        "id": "6",
+        "title": "Lista de compras 6",
+        "created": "2023-05-05",
+        "items_count": 12,
+        "items_check": 9,
+        "total": 60
+    },
+    {
+        "id": "7",
+        "title": "Lista de compras 7",
+        "created": "2023-05-04",
+        "items_count": 4,
+        "items_check": 2,
+        "total": 30
+    },
+    {
+        "id": "8",
+        "title": "Lista de compras 8",
+        "created": "2023-05-03",
+        "items_count": 7,
+        "items_check": 5,
+        "total": 20
+    },
+    {
+        "id": "9",
+        "title": "Lista de compras 9",
+        "created": "2023-05-02",
+        "items_count": 9,
+        "items_check": 6,
+        "total": 45
+    },
+    {
+        "id": "10",
+        "title": "Lista de compras 10",
+        "created": "2023-05-01",
+        "items_count": 2,
+        "items_check": 1,
+        "total": 12
+    }
+]

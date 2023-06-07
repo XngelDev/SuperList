@@ -5,9 +5,8 @@ import {
 } from 'react-native';
 
 import "./locales/i18n"
-import { useTranslation } from 'react-i18next';
 
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 import { useTheme } from 'react-native-paper';
 
@@ -17,6 +16,7 @@ import MainStack from './routes/MainStack';
 import {
   init
 } from './redux/app/reducers';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 
 function App() {

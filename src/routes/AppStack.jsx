@@ -33,6 +33,10 @@ const AppStack = () => {
 
     return (
         <BottomNavigation
+            safeAreaInsets={{
+                bottom:0
+            }}
+            
             theme={navigationTheme}
             navigationState={{ index, routes }}
             onIndexChange={setIndex}
