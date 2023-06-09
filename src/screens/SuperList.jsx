@@ -1,6 +1,6 @@
 import { Keyboard, StyleSheet, Text, View } from 'react-native'
 import React, { useCallback, useMemo, useRef, useState } from 'react'
-import { Appbar, Button, Dialog, Portal, TextInput, useTheme } from 'react-native-paper'
+import { Appbar, Button, Dialog, Modal, Portal, TextInput, useTheme } from 'react-native-paper'
 import DisplayList from '../components/templates/DisplayList'
 import ListItem from '../components/ui/ListItem'
 import BodyContainer from '../components/templates/BodyContainer'
@@ -29,13 +29,9 @@ const SuperList = () => {
 
     const [name, setName] = useState("")
     const [logPressDialog, showLongPressDialog] = useState(null)
+    const [addDialog, showAddDialog] = useState(false)
 
     const bottomSheet = useRef()
-    const snapPoints = useMemo(() => ['25%', '50%'], []);
-
-    const handleSheetChanges = useCallback((index) => {
-
-    }, []);
 
     const handleDialogAction = (action) => {
         if (logPressDialog == null) {
@@ -50,7 +46,7 @@ const SuperList = () => {
     }
 
     const handleAddAction = () => {
-        bottomSheet.current.expand()
+        showAddDialog(true)
     }
 
     const handleChangeText = (text) => {
@@ -64,7 +60,7 @@ const SuperList = () => {
         }
         insertSuperList(name)
         setName("")
-        bottomSheet.current.forceClose()
+        showAddDialog(false)
     }
 
     const handleOnItemPress = (item) => {
@@ -89,10 +85,19 @@ const SuperList = () => {
                         <Button onPress={() => showLongPressDialog(null)}>{t("action.close")}</Button>
                     </Dialog.Actions>
                 </Dialog>
+                <Modal
+                    visible={addDialog}
+                    style={{ alignItems: "center" }}
+                    contentContainerStyle={{ backgroundColor: theme.colors.background, padding: 16, borderRadius: 23 }} >
+                    <View style={{ width: 320, }} >
+                        <Text>Add</Text>
+                        <TextInput value={name} onChangeText={handleChangeText} label={t("text_name")} style={{ marginVertical: 16 }} ></TextInput>
+                        <Button onPress={handleActionSave} mode='contained-tonal' >{t("action.save")}</Button>
+                    </View>
+                </Modal>
             </Portal>
             <Appbar.Header >
-                <Appbar.Content titleStyle={{ color: theme.colors.secondary, }} title="Super List" />
-                <Appbar.Action icon="filter" />
+                <Appbar.Content titleStyle={{ color: theme.colors.secondary }} title="Super List" />
             </Appbar.Header>
             <BodyContainer hasNavigation="bottom" >
                 <DisplayList
@@ -104,18 +109,6 @@ const SuperList = () => {
                     onItemLongPress={handleOnItemLongPress}
                 />
             </BodyContainer>
-            <BottomSheet
-                enablePanDownToClose
-                ref={bottomSheet}
-                index={-1}
-                snapPoints={snapPoints}
-                onChange={handleSheetChanges}
-            >
-                <BottomSheetView style={{ paddingHorizontal: 16 }} >
-                    <TextInput value={name} onChangeText={handleChangeText} label={t("text_name")} style={{ marginVertical: 16 }} ></TextInput>
-                    <Button onPress={handleActionSave} mode='contained-tonal' >{t("action.save")}</Button>
-                </BottomSheetView>
-            </BottomSheet>
         </GestureHandlerRootView>
     )
 }

@@ -24,6 +24,7 @@
             }
         ],
         "action": {
+            "add":"Agregar",
             "accept": "Aceptar",
             "cancel": "Cancelar",
             "close": "Cerrar",
@@ -45,6 +46,12 @@
         "text_empty_list": "¡Agrega productos a tu lista de compras!",
         "text_empty_list_subtitle": "Empieza a armar tu lista de compras agregando los productos que necesitas. ¡Haz clic en el botón 'Agregar producto' para comenzar!",
         "text_name": "Nombre",
-        "text_delete_trash": "Al eliminar una lista, se moverá a la papelera. Puedes recuperarla si la necesitas. Eliminarla de la papelera la borrará permanentemente."
+        "text_delete_trash": "Al eliminar una lista, se moverá a la papelera. Puedes recuperarla si la necesitas. Eliminarla de la papelera la borrará permanentemente.",
+        "text_title_add_product":"Agregar Producto",
+        "prompt_product_name":"Nombre",
+        "prompt_product_category":"Categoria",
+        "prompt_product_qty":"Cantidad",
+        "prompt_product_unit":"Unidad",
+        "prompt_product_price":"Precio"
     }
 }
